@@ -22,7 +22,7 @@ if getenv('HBNB_TYPE_STORAGE') == 'db':
                                             ondelete='CASCADE'),
                                  primary_key=True, nullable=False))
 
-class Place(BaseModel):
+class Place(BaseModel, Base):
     """ A place to stay """
     if getenv('HBNB_TYPE_STORAGE') == 'db':
 
