@@ -12,7 +12,6 @@ import pep8
 class TestUser(unittest.TestCase):
 """ """
 
-    @classmethod
     def setUpClass(cls):
         """ """
         cls.my_user = User()
@@ -21,7 +20,6 @@ class TestUser(unittest.TestCase):
         cls.my_user.email = "airbnb@holbertonshool.com"
         cls.my_user.password = "root"
 
-    @classmethod
     def tearDownClass(cls):
         """ """
         del cls.my_user
