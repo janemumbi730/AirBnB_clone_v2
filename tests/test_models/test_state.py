@@ -10,13 +10,11 @@ import pep8
 
 class TestState(unittest.TestCase):
 """ """
-    @classmethod
     def setUpClass(cls):
         """ """
         cls.state1 = State()
         cls.state1.name = "North_Carolina_AKA_THE_BEST_STATE"
 
-    @classmethod
     def tearDownClass(cls):
         """ """
         del cls.state1
