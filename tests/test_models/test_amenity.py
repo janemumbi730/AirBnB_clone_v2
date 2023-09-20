@@ -11,13 +11,12 @@ import pep8
 class TestAmenity(unittest.TestCase):
 """ """
 
-    @classmethod
+
     def setUpClass(cls):
     """ """
     cls.amenity1 = Amenity()
         cls.amenity1.name = "Hot Tub"
 
-    @classmethod
     def tearDownClass(cls):
       """ """
         del cls.amenity1
