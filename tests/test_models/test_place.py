@@ -11,7 +11,6 @@ import pep8
 
 class TestPlace(unittest.TestCase):
 """ """
-    @classmethod
     def setUpClass(cls):
         """ """
         cls.place1 = Place()
@@ -27,7 +26,6 @@ class TestPlace(unittest.TestCase):
         cls.place1.longitude = 0.0
         cls.place1.amenity_ids = []
 
-    @classmethod
 
     def tearDownClass(cls):
         """ """
