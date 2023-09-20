@@ -24,11 +24,11 @@ class TestBaseModel(unittest.TestCase):
         except FileNotFoundError:
             pass
 
-def test_style_check(self):
-    """Tests pep8 style"""
-    style = pep8.StyleGuide(quiet=True)
-    p = style.check_files(['models/base_model.py'])
-    self.assertEqual(p.total_errors, 0, "fix pep8")
+    def test_style_check(self):
+        """Tests pep8 style"""
+        style = pep8.StyleGuide(quiet=True)
+        p = style.check_files(['models/base_model.py'])
+        self.assertEqual(p.total_errors, 0, "fix pep8")
 
 
     def test_checking_for_functions(self):
