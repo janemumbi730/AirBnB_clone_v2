@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-Unittest for BaseModel class
-"""
+""" """
 import unittest
 import os
 import pep8
@@ -23,7 +21,7 @@ class TestBaseModel(unittest.TestCase):
             pass
 
     def test_style_check(self):
-        """Tests pep8 style"""
+        """Tests style"""
         style = pep8.StyleGuide(quiet=True)
         p = style.check_files(['models/base_model.py'])
         self.assertEqual(p.total_errors, 0, "fix pep8")
