@@ -1,9 +1,12 @@
 #!/usr/bin/python3
-""" """
+"""
+Unittest for BaseModel class
+"""
 import unittest
 import os
 import pep8
 from models.base_model import BaseModel
+
 
 class TestBaseModel(unittest.TestCase):
 
@@ -22,12 +25,14 @@ class TestBaseModel(unittest.TestCase):
             pass
 
     def test_style_check(self):
+        """
+        Tests pep8 style
+        """
         style = pep8.StyleGuide(quiet=True)
         p = style.check_files(['models/base_model.py'])
         self.assertEqual(p.total_errors, 0, "fix pep8")
 
     def test_checking_for_functions(self):
-        """city instances related to the state"""
         self.assertIsNotNone(BaseModel.__doc__)
         self.assertIsNotNone(BaseModel.save.__doc__)
         self.assertIsNotNone(BaseModel.to_dict.__doc__)
@@ -42,7 +47,6 @@ class TestBaseModel(unittest.TestCase):
 
     @unittest.skipIf(os.getenv('HBNB_TYPE_STORAGE') == 'db',
                      "won't work in db")
-
     def test_save(self):
         self.base1.save()
         self.assertNotEqual(self.base1.created_at, self.base1.updated_at)
