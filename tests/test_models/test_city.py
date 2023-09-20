@@ -12,14 +12,12 @@ import pep8
 class TestCity(unittest.TestCase):
     """ """
 
-    @classmethod
     def setUpClass(cls):
         """ """
         cls.city1 = City()
         cls.city1.name = "Raleigh"
         cls.city1.state_id = "NC"
 
-    @classmethod
 
     def tearDownClass(cls):
         """ """
