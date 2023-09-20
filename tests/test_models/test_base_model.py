@@ -1,11 +1,9 @@
 #!/usr/bin/python3
 """ """
-from models.base_model import BaseModel
 import unittest
 import os
 import pep8
-
-
+from models.base_model import BaseModel
 
 class TestBaseModel(unittest.TestCase):
 
