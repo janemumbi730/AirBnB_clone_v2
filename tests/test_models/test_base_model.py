@@ -9,7 +9,6 @@ class TestBaseModel(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-     """ """
         cls.base1 = BaseModel()
         cls.base1.name = "Greg"
         cls.base1.my_number = 29
