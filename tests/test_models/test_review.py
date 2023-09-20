@@ -10,7 +10,6 @@ import pep8
 
 class TestReview(unittest.TestCase):
 """ """
-    @classmethod
     def setUpClass(cls):
         """ """
         cls.rev1 = Review()
@@ -18,7 +17,6 @@ class TestReview(unittest.TestCase):
         cls.rev1.user_id = "Greg"
         cls.rev1.text = "Grade A"
 
-    @classmethod
     def tearDownClass(cls):
         """ """
         del cls.rev1
