@@ -5,7 +5,7 @@ from datetime import datetime
 import shlex
 import os
 
-env.hosts = ['54.174.245.241', '34.232.66.224']
+env.hosts = ['34.232.66.224', '54.174.245.241']
 env.user = 'ubuntu'
 
 def do_deploy(archive_path):
