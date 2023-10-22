@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """
 Module 3-python_route.Starts a Flask Web App
-Test on tab 1:python3 -m web_flask.3-python_route
-On another tab:curl 0.0.0.0:5000/python/ ; echo "" | cat -e
 """
 from flask import Flask
 app = Flask(__name__)
